@@ -21,5 +21,11 @@
   "bugs": {
     "url": "https://github.com/TTENSHII/github-profile-stats/issues"
   },
-  "homepage": "https://github.com/TTENSHII/github-profile-stats#readme"
+  "homepage": "https://github.com/TTENSHII/github-profile-stats#readme",
+  "dependencies": {
+    "@octokit/rest": "^19.0.5",
+    "@vercel/ncc": "^0.34.0",
+    "axios": "^1.1.3",
+    "dotenv": "^16.0.3"
+  }
 }
