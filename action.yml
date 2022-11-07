@@ -1,0 +1,47 @@
+name: 'Github profile stats'
+description: 'Show your github stats on your profile README'
+author: 'Tenshi'
+
+inputs:
+  GH_TOKEN:
+    description: 'Github API access Token'
+    required: true
+  
+  DEBUG:
+    description: 'Enable debug mode'
+    required: false
+    default: 'false'
+
+  SHOW_HOURS:
+    description: 'Show working hours stats'
+    required: false
+    default: 'true'
+
+  SHOW_DAYS:
+    description: 'Show working days stats'
+    required: false
+    default: 'true'
+
+  SHOW_LANGUAGES:
+    description: 'Show languages stats'
+    required: false
+    default: 'true'
+  
+  LANGUAGES_COUNT:
+    description: 'Number of languages to show'
+    required: false
+    default: '5'
+  
+  SHOW_OVERWIEW:
+    description: 'Show profile overview stats'
+    required: false
+    default: 'true'
+
+  COMMIT_MESSAGE:
+    description: 'Commit message'
+    required: false
+    default: 'Update profile stats'
+
+runs:
+  using: 'node16'
+  main: 'dist/index.js'

@@ -1,0 +1,25 @@
+{
+  "name": "github-profile-stats",
+  "version": "1.0.0",
+  "description": "Add your github stats to your profile without wakatime",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js -o dist",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TTENSHII/github-profile-stats.git"
+  },
+  "keywords": [
+    "github-profile-stats",
+    "github-action"
+  ],
+  "type": "module",
+  "author": "Tenshi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TTENSHII/github-profile-stats/issues"
+  },
+  "homepage": "https://github.com/TTENSHII/github-profile-stats#readme"
+}
