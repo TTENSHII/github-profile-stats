@@ -25,7 +25,7 @@ const doGraphQlRequests = async (graphQlQuery) => {
     }
 };
 
-const getUserRepositories = async (login) => {
+const getRepositories = async (login) => {
     let repositories = [];
     const query =
     `query {
@@ -58,4 +58,4 @@ const getUserRepositories = async (login) => {
     return repositories;
 };
 
-export default getUserRepositories;
+export default getRepositories;

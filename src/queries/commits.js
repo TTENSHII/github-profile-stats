@@ -12,7 +12,7 @@ const octokit = new Octokit({
 
 const getRepositoryCommits = async (login, repoOwner, repoName) => {
     try {
-        const commits = await octokit.repos.listCommits({
+        const commits = await octokit.rest.repos.listCommits({
             owner: repoOwner,
             repo: repoName,
             author: login,
