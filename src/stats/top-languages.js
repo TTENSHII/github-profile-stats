@@ -44,7 +44,7 @@ const getUserLanguages = (repositories) => {
 };
 
 const removeExcessLanguages = (userLanguages) => {
-    const maxLanguages = 5;
+    const maxLanguages = process.env.INPUT_LANGUAGES_COUNT || 5;
     if (userLanguages.length > maxLanguages) {
         userLanguages.sort((a, b) => b.percent - a.percent);
         userLanguages = userLanguages.slice(0, maxLanguages);

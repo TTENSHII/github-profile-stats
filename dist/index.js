@@ -13430,7 +13430,7 @@ const getUserLanguages = (repositories) => {
 };
 
 const removeExcessLanguages = (userLanguages) => {
-    const maxLanguages = 5;
+    const maxLanguages = process.env.INPUT_LANGUAGES_COUNT || 5;
     if (userLanguages.length > maxLanguages) {
         userLanguages.sort((a, b) => b.percent - a.percent);
         userLanguages = userLanguages.slice(0, maxLanguages);
@@ -13597,11 +13597,28 @@ const getSections = () => {
     return sections;
 };
 
+const getStats = (hoursStats, weekStats, topLanguages, profileInfos) => {
+    let stats = [];
+    if (process.env.INPUT_SHOW_HOURS === "true") {
+        stats.push(hoursStats);
+    }
+    if (process.env.INPUT_SHOW_DAYS === "true") {
+        stats.push(weekStats);
+    }
+    if (process.env.INPUT_SHOW_LANGUAGES === "true") {
+        stats.push(topLanguages);
+    }
+    if (process.env.INPUT_SHOW_OVERWIEW === "true") {
+        stats.push(profileInfos);
+    }
+    return stats;
+};
+
 const writeReadme = (hoursStats, weekStats, topLanguages, profileInfos) => {
     const sections = getSections();
     if (sections.startSection !== null && sections.endSection !== null) {
         const readmeContent = external_fs_.readFileSync("README.md", "utf8").split("\n");
-        const stats = [hoursStats, weekStats, topLanguages, profileInfos];
+        const stats = getStats(hoursStats, weekStats, topLanguages, profileInfos);
         const newContent = readmeContent.slice(0, sections.startSection + 1)
             .concat(stats).concat(readmeContent.slice(sections.endSection));
         external_fs_.writeFileSync("README.md", newContent.join("\n"));
@@ -13614,7 +13631,7 @@ const writeReadme = (hoursStats, weekStats, topLanguages, profileInfos) => {
 const pushReadme = () => {
     const userEmail = "41898282+github-actions[bot]@users.noreply.github.com";
     const userName = "github-actions[bot]";
-    const commitMessage = process.env.INPUT_COMMIT_MESSAGE;
+    const commitMessage = process.env.INPUT_COMMIT_MESSAGE || "Update README.md";
     (0,external_child_process_namespaceObject.exec)(`git config --global user.email "${userEmail}"`);
     (0,external_child_process_namespaceObject.exec)(`git config --global user.name "${userName}"`);
     (0,external_child_process_namespaceObject.exec)("git add README.md");
