@@ -64,7 +64,7 @@ const getUserCommitsNumber = async (login) => {
     }
 };
 
-const getUserStarsNumber = async (login) => {
+const getUserStarsNumber = async () => {
     try {
         const { data } = await octokit.rest.activity.listReposStarredByAuthenticatedUser();
         return data.length;
