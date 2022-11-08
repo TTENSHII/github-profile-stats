@@ -2,6 +2,7 @@ import { getUserInfos } from "./queries/user-stats.js";
 import getRepositories from "./queries/repositories.js";
 import getCommits from "./queries/commits.js";
 import getHoursStats from "./stats/hours-stats.js";
+import getWeekStats from "./stats/week-stats.js";
 
 const main = async () => {
     const userInfos = await getUserInfos();
@@ -12,7 +13,7 @@ const main = async () => {
     const repositories = await getRepositories(userInfos.login);
     const commits = await getCommits(userInfos.login, repositories);
     const hoursStats = getHoursStats(commits);
-    console.log(hoursStats);
+    const weekStats = getWeekStats(commits);
 };
 
 main();
