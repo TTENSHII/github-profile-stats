@@ -1,6 +1,9 @@
 name: 'Github profile stats'
 description: 'Show your github stats on your profile README'
 author: 'Tenshi'
+branding:
+  icon: 'arrow-down-circle'
+  color: 'black'
 
 inputs:
   GH_TOKEN:

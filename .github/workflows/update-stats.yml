@@ -1,0 +1,21 @@
+name: 'Update profile stats'
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: './'
+        with:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          DEBUG: 'false'
+          SHOW_HOURS: 'true'
+          SHOW_DAYS: 'true'
+          SHOW_LANGUAGES: 'true'
+          LANGUAGES_COUNT: '5'
+          SHOW_OVERWIEW: 'true'
+          COMMIT_MESSAGE: 'Update profile stats'
