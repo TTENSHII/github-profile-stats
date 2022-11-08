@@ -3,6 +3,7 @@ import getRepositories from "./queries/repositories.js";
 import getCommits from "./queries/commits.js";
 import getHoursStats from "./stats/hours-stats.js";
 import getWeekStats from "./stats/week-stats.js";
+import getTopLanguages from "./stats/top-languages.js";
 
 const main = async () => {
     const userInfos = await getUserInfos();
@@ -14,6 +15,7 @@ const main = async () => {
     const commits = await getCommits(userInfos.login, repositories);
     const hoursStats = getHoursStats(commits);
     const weekStats = getWeekStats(commits);
+    const topLanguages = getTopLanguages(repositories);
 };
 
 main();
