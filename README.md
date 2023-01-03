@@ -88,7 +88,7 @@ Typescript  : #························ 0%
 🔒 - Private repositories: 17
 ⭐ - Repositories starred: 13
 🔃 - Pull requests: 58
-🐲 - Repos contributed to: 59
+🐲 - Repos contributed to: 58
 🍃 - Commits made: 1307
 ```
 <!--END_SECTION:GITHUB_STATS-->
