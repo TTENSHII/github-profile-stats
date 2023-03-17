@@ -74,21 +74,21 @@ Sunday     : ####····················· 16%
 ```
 📊 - Top languages
 ```text
-Assembly    : #························ 3%
 C           : ###########·············· 42%
-C++         : #######·················· 29%
+Javascript  : ####····················· 15%
 Haskell     : ###······················ 10%
-Javascript  : ####····················· 16%
+Assembly    : #························ 3%
+C++         : #######·················· 29%
 ```
 🎏 - Quick overview of my profile
 ```text
 👥 - Followers: 9
 👤 - Following: 12
 📂 - Public repositories: 8
-🔒 - Private repositories: 20
+🔒 - Private repositories: 21
 ⭐ - Repositories starred: 17
 🔃 - Pull requests: 128
-🐲 - Repos contributed to: 78
-🍃 - Commits made: 2117
+🐲 - Repos contributed to: 79
+🍃 - Commits made: 2129
 ```
 <!--END_SECTION:GITHUB_STATS-->
