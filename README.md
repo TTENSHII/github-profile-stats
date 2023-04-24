@@ -87,7 +87,7 @@ Haskell     : ###······················ 12%
 📂 - Public repositories: 9
 🔒 - Private repositories: 23
 ⭐ - Repositories starred: 22
-🔃 - Pull requests: 156
+🔃 - Pull requests: 158
 🐲 - Repos contributed to: 82
 🍃 - Commits made: 138
 ```
