@@ -84,12 +84,12 @@ Javascript  : #························ 5%
 ```text
 👥 - Followers: 11
 👤 - Following: 15
-📂 - Public repositories: 8
+📂 - Public repositories: 9
 🔒 - Private repositories: 20
 ⭐ - Repositories starred: 27
 🔃 - Pull requests: 261
 🏮 - Issues: 1
-🐲 - Repos contributed to: 66
-🍃 - Commits made: 837
+🐲 - Repos contributed to: 67
+🍃 - Commits made: 843
 ```
 <!--END_SECTION:GITHUB_STATS-->
