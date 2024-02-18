@@ -74,15 +74,15 @@ Sunday     : #####···················· 19%
 ```
 📊 - Top languages
 ```text
-C           : ###······················ 13%
-Lua         : ##······················· 6%
 Javascript  : ##······················· 7%
+C           : ###······················ 13%
 Haskell     : ######··················· 22%
+Lua         : ##······················· 6%
 C++         : #############············ 52%
 ```
 🎏 - Quick overview of my profile
 ```text
-👥 - Followers: 11
+👥 - Followers: 12
 👤 - Following: 15
 📂 - Public repositories: 9
 🔒 - Private repositories: 20
