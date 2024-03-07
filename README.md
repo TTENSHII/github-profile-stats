@@ -74,11 +74,11 @@ Sunday     : #####···················· 20%
 ```
 📊 - Top languages
 ```text
+Typescript  : ##······················· 7%
 C++         : #############············ 51%
 Haskell     : ######··················· 23%
 C           : ###······················ 10%
 Javascript  : ###······················ 10%
-Typescript  : ##······················· 7%
 ```
 🎏 - Quick overview of my profile
 ```text
@@ -90,6 +90,5 @@ Typescript  : ##······················· 7%
 🔃 - Pull requests: 273
 🏮 - Issues: 8
 🐲 - Repos contributed to: 48
-🍃 - Commits made: 1068
 ```
 <!--END_SECTION:GITHUB_STATS-->
