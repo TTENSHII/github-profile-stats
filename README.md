@@ -57,7 +57,7 @@ jobs:
 <!--START_SECTION:GITHUB_STATS-->
 🌉 - Working hours stats
 ```text
-Morning    : ##······················· 8%
+Morning    : ##······················· 7%
 Afternoon  : #########················ 35%
 Evening    : #########················ 37%
 Night      : #####···················· 20%
