@@ -74,15 +74,15 @@ Sunday     : ######··················· 24%
 ```
 📊 - Top languages
 ```text
-Javascript  : ###······················ 11%
-C           : #························ 5%
 Haskell     : #####···················· 19%
-Typescript  : #####···················· 20%
 C++         : ###########·············· 45%
+Typescript  : #####···················· 20%
+C           : #························ 5%
+Javascript  : ###······················ 11%
 ```
 🎏 - Quick overview of my profile
 ```text
-👥 - Followers: 13
+👥 - Followers: 12
 👤 - Following: 17
 📂 - Public repositories: 9
 🔒 - Private repositories: 20
