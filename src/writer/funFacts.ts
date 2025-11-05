@@ -6,7 +6,7 @@ import { FunFacts } from "../types/stats";
  * @param textBuffer Array of strings to append the fun facts to.
  */
 const writeFunFacts = (funFacts: FunFacts, textBuffer: string[]) => {
-    textBuffer.push(`\n🎉 - Fun Facts:`);
+    textBuffer.push(`\n🎉 Fun Facts:`);
     textBuffer.push("```text");
     textBuffer.push(`🏆 - Longest commit streak: ${funFacts.longestCommitStreak} days`)
     if (funFacts.mostLikedRepo) {

@@ -8,7 +8,7 @@ import { getHourInTimezone } from "../utils/timezoneHelper";
  * @param textBuffer Array of strings to append the working hours stats to.
  */
 const writeWorkingHoursStats = (repositories: Repository[], textBuffer: string[]) => {
-    textBuffer.push(`🌉 - Working hours stats`);
+    textBuffer.push(`🌉 Working hours stats`);
     textBuffer.push("```text");
 
     const hoursBucket: Record<HourBucket, number> = {

@@ -13,7 +13,7 @@ const writeTopLanguagesToBuffer = (sortedLanguages: [string, number][], textBuff
         return;
     }
 
-    textBuffer.push('\n📊 - Top languages');
+    textBuffer.push('\n📊 Top languages');
     textBuffer.push("```text");
 
     sortedLanguages.forEach(([name, percent]) => {

@@ -7,7 +7,7 @@ import { Repository, UserStats } from "../types/stats";
  * @param textBuffer Array of strings to append the overview to.
  */
 const writeQuickOverview = (repos: Repository[], userStats: UserStats, textBuffer: string[]) => {
-    textBuffer.push('🎏 - Quick overview of my profile');
+    textBuffer.push('🎏 Quick overview of my profile');
     textBuffer.push("```text");
     textBuffer.push(`👥 - Followers: ${userStats.followers}`);
     textBuffer.push(`👤 - Following: ${userStats.following}`);

@@ -8,7 +8,7 @@ import { getDayInTimezone } from "../utils/timezoneHelper";
  * @param textBuffer Array of strings to append the working days stats to.
  */
 const writeWorkingDaysStats = (repositories: Repository[], textBuffer: string[]) => {
-    textBuffer.push(`📅 - Working days stats`);
+    textBuffer.push(`📅 Working days stats`);
     textBuffer.push("```text");
     const daysBucket: Record<DayOfWeek, number> = {
         Sunday: 0,
