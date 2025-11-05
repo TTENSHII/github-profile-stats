@@ -1,25 +1,20 @@
-name: 'Update profile stats'
+name: "update-profile-stats"
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
 
 permissions:
   contents: write
 
 jobs:
-  update-stats:
+  update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: './'
+      - uses: actions/checkout@v5
+      - uses: ./
         with:
-          GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          DEBUG: 'false'
-          SHOW_HOURS: 'true'
-          SHOW_DAYS: 'true'
-          SHOW_LANGUAGES: 'true'
-          LANGUAGES_COUNT: '5'
-          SHOW_OVERWIEW: 'true'
-          COMMIT_MESSAGE: 'Update profile stats'
+          gh-token: ${{ secrets.GH_TOKEN }}
+          timezone: "Europe/Paris"
+          output-file: "README.md"
+          max-languages-to-show: 6
+          min-language-percentage: 20

@@ -1,50 +1,67 @@
-name: 'Github profile stats'
-description: 'Show your github stats on your profile README'
-author: 'Tenshi'
+name: 'github-profile-stats'
+description: "Display your GitHub stats on your profile"
+author: "Kwantiq"
 branding:
-  icon: 'arrow-down-circle'
-  color: 'black'
+  icon: "globe"
+  color: "gray-dark"
 
 inputs:
-  GH_TOKEN:
-    description: 'Github API access Token'
+  gh-token:
+    description: "GitHub token with repository write permissions"
     required: true
-  
-  DEBUG:
-    description: 'Enable debug mode'
+  output-file:
+    description: "The output file to generate or update (markdown format)"
     required: false
-    default: 'false'
-
-  SHOW_HOURS:
-    description: 'Show working hours stats'
+    default: "README.md"
+  timezone:
+    description: "Timezone used for date formatting (e.g., Europe/London)"
     required: false
-    default: 'true'
-
-  SHOW_DAYS:
-    description: 'Show working days stats'
+    default: "Europe/Dublin"
+  bar-fill-char:
+    description: "Character used to fill progress bars"
     required: false
-    default: 'true'
-
-  SHOW_LANGUAGES:
-    description: 'Show languages stats'
+    default: "#"
+  bar-empty-char:
+    description: "Character used for empty parts of progress bars"
     required: false
-    default: 'true'
-  
-  LANGUAGES_COUNT:
-    description: 'Number of languages to show'
+    default: "."
+  min-language-percentage:
+    description: "Languages with a percentage below this value will be excluded **per repository** (0-40)"
     required: false
-    default: '5'
-  
-  SHOW_OVERWIEW:
-    description: 'Show profile overview stats'
+    default: 15
+  max-languages-to-show:
+    description: "Maximum number of languages to display"
     required: false
-    default: 'true'
-
-  COMMIT_MESSAGE:
-    description: 'Commit message'
+    default: 5
+  commit-message:
+    description: "The commit message used when updating the markdown file"
     required: false
-    default: 'Update profile stats'
+    default: "Update profile stats"
+  language-sort-mode:
+    description: "Sorting mode for languages: 'percentage' or 'alphabetical'"
+    required: false
+    default: "alphabetical"
+  include-overview:
+    description: "Include general overview section in output"
+    required: false
+    default: "true"
+  include-fun-facts:
+    description: "Include fun facts section in output"
+    required: false
+    default: "true"
+  include-languages:
+    description: "Include languages section in output"
+    required: false
+    default: "true"
+  include-working-hours:
+    description: "Include working hours section in output"
+    required: false
+    default: "true"
+  include-working-days:
+    description: "Include working days section in output"
+    required: false
+    default: "true"
 
 runs:
-  using: 'node16'
-  main: 'dist/index.js'
+  using: "node24"
+  main: "dist/index.js"
