@@ -49,7 +49,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-      - uses: TTENSHII/github-profile-stats@main
+      - uses: TTENSHII/github-profile-stats@v2
         with:
           gh-token: ${{ secrets.GH_TOKEN }}
           timezone: "Europe/Paris"
