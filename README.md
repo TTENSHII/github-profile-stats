@@ -61,8 +61,8 @@ jobs:
 You can check the `inputs` section to see all the available options.
 By default, the stats are appended to the bottom but if you want to place the stats in a specific location of your markdown file, you need to add the following section:
 ```
-<!--START_SECTION:GITHUB_STATS-->
-<!--END_SECTION:GITHUB_STATS-->
+<!-- STATS-SECTION:START -->
+<!-- STATS-SECTION:END -->
 ```
 
 (You can read this README file to see an example)
