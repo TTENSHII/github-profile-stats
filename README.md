@@ -113,7 +113,7 @@ The philosophy behind this is simple: it is preferable to fail cleanly than to p
 ## 📘 - Example
 
 <!-- STATS-SECTION:START -->
-🎏 - Quick overview of my profile
+🎏 Quick overview of my profile
 ```text
 👥 - Followers: 14
 👤 - Following: 15
@@ -123,11 +123,11 @@ The philosophy behind this is simple: it is preferable to fail cleanly than to p
 🔃 - Pull requests: 387
 🏮 - Issues: 31
 🐲 - Repositories contributed to: 21
-🍃 - Commits made: 1284
+🍃 - Commits made: 1286
 📝 - Gists: 2
 ```
 
-🎉 - Fun Facts:
+🎉 Fun Facts:
 ```text
 🏆 - Longest commit streak: 8 days
 💖 - Most liked repo: XashInjector with 8 stars
@@ -137,7 +137,7 @@ The philosophy behind this is simple: it is preferable to fail cleanly than to p
 📊 - Average commits per repo: 61
 ```
 
-📊 - Top languages
+📊 Top languages
 ```text
 Assembly  : #........................ 4%
 C         : #######.................. 26%
@@ -146,14 +146,14 @@ Haskell   : ###...................... 11%
 Python    : #........................ 6%
 TypeScript: ####..................... 17%
 ```
-🌉 - Working hours stats
+🌉 Working hours stats
 ```text
 Morning   : #####.................... 21%
 Afternoon : ########................. 33%
 Evening   : #######.................. 27%
 Night     : #####.................... 19%
 ```
-📅 - Working days stats
+📅 Working days stats
 ```text
 Sunday    : #####.................... 18%
 Monday    : ###...................... 13%
