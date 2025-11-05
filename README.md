@@ -118,49 +118,49 @@ The philosophy behind this is simple: it is preferable to fail cleanly than to p
 👥 - Followers: 14
 👤 - Following: 15
 📂 - Public repositories: 15
-🔒 - Private repositories: 9
-⭐ - Total stars: 28
+🔒 - Private repositories: 6
+⭐ - Total stars: 26
 🔃 - Pull requests: 387
 🏮 - Issues: 31
-🐲 - Repositories contributed to: 24
-🍃 - Commits made: 1496
+🐲 - Repositories contributed to: 21
+🍃 - Commits made: 1395
 📝 - Gists: 2
 ```
 
 🎉 - Fun Facts:
 ```text
 🏆 - Longest commit streak: 12 days
-💖 - Most liked repo: XashInjector with 9 stars
+💖 - Most liked repo: XashInjector with 8 stars
 📅 - Days on GitHub: 1581 days (4 years)
-🌴 - Weekend commits ratio: 29%
-🌪️ - Commit storm day: 11/5/2025 with 58 commits
-📊 - Average commits per repo: 62
+🌴 - Weekend commits ratio: 30%
+🌪️ - Commit storm day: 5/30/2023 with 38 commits
+📊 - Average commits per repo: 66
 ```
 
 📊 - Top languages
 ```text
-C         : ######................... 23%
-C++       : ########................. 32%
-Haskell   : ###...................... 10%
-JavaScript: ##....................... 9%
-Python    : #........................ 5%
-TypeScript: #####.................... 21%
+Assembly  : #........................ 4%
+C         : #######.................. 26%
+C++       : #########................ 36%
+Haskell   : ###...................... 11%
+Python    : #........................ 6%
+TypeScript: ####..................... 17%
 ```
 🌉 - Working hours stats
 ```text
-Morning   : #####.................... 19%
+Morning   : #####.................... 20%
 Afternoon : ########................. 33%
-Evening   : ########................. 31%
-Night     : ####..................... 17%
+Evening   : #######.................. 29%
+Night     : #####.................... 18%
 ```
 📅 - Working days stats
 ```text
-Sunday    : ####..................... 18%
+Sunday    : #####.................... 18%
 Monday    : ###...................... 13%
 Tuesday   : ####..................... 18%
-Wednesday : ####..................... 18%
-Thursday  : ###...................... 11%
-Friday    : ###...................... 11%
-Saturday  : ###...................... 11%
+Wednesday : ####..................... 15%
+Thursday  : ###...................... 12%
+Friday    : ###...................... 12%
+Saturday  : ###...................... 12%
 ```
 <!-- STATS-SECTION:END -->
