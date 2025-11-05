@@ -25663,7 +25663,7 @@ const getConfig = () => {
         return cachedConfig;
     }
     const rawMinLang = parseInt((0, core_1.getInput)('min-language-percentage'), 10);
-    const minLanguagePercentage = isNaN(rawMinLang) || rawMinLang < 0 || rawMinLang > 70 ? 15 : rawMinLang;
+    const minLanguagePercentage = isNaN(rawMinLang) || rawMinLang < 0 || rawMinLang > 40 ? 15 : rawMinLang;
     const rawLanguagesToShow = parseInt((0, core_1.getInput)('max-languages-to-show'), 10);
     const maxLanguagesToShow = isNaN(rawLanguagesToShow) || rawLanguagesToShow < 1 ? 5 : rawLanguagesToShow;
     cachedConfig = {
@@ -26489,7 +26489,7 @@ exports.writeFunFacts = void 0;
  * @param textBuffer Array of strings to append the fun facts to.
  */
 const writeFunFacts = (funFacts, textBuffer) => {
-    textBuffer.push(`\n🎉 - Fun Facts:`);
+    textBuffer.push(`\n🎉 Fun Facts:`);
     textBuffer.push("```text");
     textBuffer.push(`🏆 - Longest commit streak: ${funFacts.longestCommitStreak} days`);
     if (funFacts.mostLikedRepo) {
@@ -26580,7 +26580,7 @@ exports.writeQuickOverview = void 0;
  * @param textBuffer Array of strings to append the overview to.
  */
 const writeQuickOverview = (repos, userStats, textBuffer) => {
-    textBuffer.push('🎏 - Quick overview of my profile');
+    textBuffer.push('🎏 Quick overview of my profile');
     textBuffer.push("```text");
     textBuffer.push(`👥 - Followers: ${userStats.followers}`);
     textBuffer.push(`👤 - Following: ${userStats.following}`);
@@ -26618,7 +26618,7 @@ const writeTopLanguagesToBuffer = (sortedLanguages, textBuffer) => {
     if (totalPercent === 0) {
         return;
     }
-    textBuffer.push('\n📊 - Top languages');
+    textBuffer.push('\n📊 Top languages');
     textBuffer.push("```text");
     sortedLanguages.forEach(([name, percent]) => {
         const realPercent = (percent / totalPercent) * 100;
@@ -26669,7 +26669,7 @@ const timezoneHelper_1 = __nccwpck_require__(8046);
  * @param textBuffer Array of strings to append the working days stats to.
  */
 const writeWorkingDaysStats = (repositories, textBuffer) => {
-    textBuffer.push(`📅 - Working days stats`);
+    textBuffer.push(`📅 Working days stats`);
     textBuffer.push("```text");
     const daysBucket = {
         Sunday: 0,
@@ -26714,7 +26714,7 @@ const timezoneHelper_1 = __nccwpck_require__(8046);
  * @param textBuffer Array of strings to append the working hours stats to.
  */
 const writeWorkingHoursStats = (repositories, textBuffer) => {
-    textBuffer.push(`🌉 - Working hours stats`);
+    textBuffer.push(`🌉 Working hours stats`);
     textBuffer.push("```text");
     const hoursBucket = {
         "Morning": 0,
@@ -32668,15 +32668,15 @@ var __webpack_exports__ = {};
 var exports = __webpack_exports__;
 
 Object.defineProperty(exports, "__esModule", ({ value: true }));
-const repositories_1 = __nccwpck_require__(3006);
-const languages_1 = __nccwpck_require__(2691);
-const markdownWriter_1 = __nccwpck_require__(9725);
-const commits_1 = __nccwpck_require__(9002);
-const userStats_1 = __nccwpck_require__(2514);
-const computeFunFacts_1 = __nccwpck_require__(9656);
-const issuesAndPR_1 = __nccwpck_require__(6483);
 const config_1 = __nccwpck_require__(1122);
+const userStats_1 = __nccwpck_require__(2514);
+const repositories_1 = __nccwpck_require__(3006);
+const commits_1 = __nccwpck_require__(9002);
+const languages_1 = __nccwpck_require__(2691);
+const issuesAndPR_1 = __nccwpck_require__(6483);
 const gists_1 = __nccwpck_require__(7032);
+const markdownWriter_1 = __nccwpck_require__(9725);
+const computeFunFacts_1 = __nccwpck_require__(9656);
 const logStatsSummary_1 = __nccwpck_require__(7494);
 const main = async () => {
     try {
