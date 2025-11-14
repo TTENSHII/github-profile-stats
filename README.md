@@ -59,12 +59,14 @@ jobs:
 ```
 
 You can check the `inputs` section to see all the available options.
-By default, the stats are appended to the bottom but if you want to place the stats in a specific location of your markdown file, you need to add the following section:
+
+By default, the stats are appended to the bottom of the markdown file but if you want to place the stats in a specific location, you need to add the following section:
+
 ```
-<!-- STATS-SECTION:START -->
-<!-- STATS-SECTION:END -->
+<!-- STATS-SECTION:YOUR-TAG-HERE -->
 ```
 
+Replace `YOUR-TAG-HERE` with `START` to mark the beginning of the stats section, or with `END` to mark the end.
 (You can read this README file to see an example)
 
 ## 📊 - How Language Percentages Are Calculated
