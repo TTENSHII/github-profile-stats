@@ -62,56 +62,6 @@ You can check the `inputs` section to see all the available options.
 By default, the stats are appended to the bottom but if you want to place the stats in a specific location of your markdown file, you need to add the following section:
 ```
 <!-- STATS-SECTION:START -->
-🎏 Quick overview of my profile
-```text
-👥 - Followers: 14
-👤 - Following: 12
-📂 - Public repositories: 15
-🔒 - Private repositories: 7
-⭐ - Total stars: 26
-🔃 - Pull requests: 387
-🏮 - Issues: 32
-🐲 - Repositories contributed to: 22
-🍃 - Commits made: 1340
-📝 - Gists: 2
-```
-
-🎉 Fun Facts:
-```text
-🏆 - Longest commit streak: 8 days
-💖 - Most liked repo: XashInjector with 8 stars
-📅 - 4 years and 4 months
-🌴 - Weekend commits ratio: 29%
-🌪️ - Commit storm day: 5/30/2023 with 35 commits
-📊 - Average commits per repo: 61
-```
-
-📊 Top languages
-```text
-Assembly  : #........................ 4%
-C         : ######................... 25%
-C++       : #########................ 34%
-Haskell   : ###...................... 11%
-Python    : #........................ 5%
-TypeScript: #####.................... 21%
-```
-🌉 Working hours stats
-```text
-Morning   : #####.................... 20%
-Afternoon : ########................. 34%
-Evening   : #######.................. 28%
-Night     : #####.................... 19%
-```
-📅 Working days stats
-```text
-Sunday    : ####..................... 18%
-Monday    : ###...................... 12%
-Tuesday   : ####..................... 18%
-Wednesday : ####..................... 16%
-Thursday  : ###...................... 12%
-Friday    : ###...................... 13%
-Saturday  : ###...................... 11%
-```
 <!-- STATS-SECTION:END -->
 ```
 
@@ -166,14 +116,14 @@ The philosophy behind this is simple: it is preferable to fail cleanly than to p
 🎏 Quick overview of my profile
 ```text
 👥 - Followers: 14
-👤 - Following: 15
+👤 - Following: 12
 📂 - Public repositories: 15
-🔒 - Private repositories: 6
+🔒 - Private repositories: 7
 ⭐ - Total stars: 26
 🔃 - Pull requests: 387
-🏮 - Issues: 31
-🐲 - Repositories contributed to: 21
-🍃 - Commits made: 1286
+🏮 - Issues: 32
+🐲 - Repositories contributed to: 22
+🍃 - Commits made: 1340
 📝 - Gists: 2
 ```
 
@@ -181,8 +131,8 @@ The philosophy behind this is simple: it is preferable to fail cleanly than to p
 ```text
 🏆 - Longest commit streak: 8 days
 💖 - Most liked repo: XashInjector with 8 stars
-📅 - Days on GitHub: 1581 days (4 years)
-🌴 - Weekend commits ratio: 30%
+📅 - 4 years and 4 months
+🌴 - Weekend commits ratio: 29%
 🌪️ - Commit storm day: 5/30/2023 with 35 commits
 📊 - Average commits per repo: 61
 ```
@@ -190,27 +140,27 @@ The philosophy behind this is simple: it is preferable to fail cleanly than to p
 📊 Top languages
 ```text
 Assembly  : #........................ 4%
-C         : #######.................. 26%
-C++       : #########................ 36%
+C         : ######................... 25%
+C++       : #########................ 34%
 Haskell   : ###...................... 11%
-Python    : #........................ 6%
-TypeScript: ####..................... 17%
+Python    : #........................ 5%
+TypeScript: #####.................... 21%
 ```
 🌉 Working hours stats
 ```text
-Morning   : #####.................... 21%
-Afternoon : ########................. 33%
-Evening   : #######.................. 27%
+Morning   : #####.................... 20%
+Afternoon : ########................. 34%
+Evening   : #######.................. 28%
 Night     : #####.................... 19%
 ```
 📅 Working days stats
 ```text
-Sunday    : #####.................... 18%
-Monday    : ###...................... 13%
+Sunday    : ####..................... 18%
+Monday    : ###...................... 12%
 Tuesday   : ####..................... 18%
-Wednesday : ####..................... 15%
+Wednesday : ####..................... 16%
 Thursday  : ###...................... 12%
-Friday    : ###...................... 12%
+Friday    : ###...................... 13%
 Saturday  : ###...................... 11%
 ```
 <!-- STATS-SECTION:END -->
