@@ -38,7 +38,12 @@ const logFunFacts = (funFacts: FunFacts) => {
     }
 
     console.log(`weekendWarriorRatio: ${funFacts.weekendWarriorRatio.toFixed(2)}%`);
-    console.log(`yearsOnGitHub: ${funFacts.yearsOnGitHub} years = ${funFacts.daysOnGitHub} days`);
+    const yearText = funFacts.yearsOnGitHub === 1 ? 'year' : 'years';
+    const monthText = funFacts.monthsOnGitHub === 1 ? 'month' : 'months';
+    const timeOnGitHub = funFacts.monthsOnGitHub === 0 
+        ? `${funFacts.yearsOnGitHub} ${yearText}`
+        : `${funFacts.yearsOnGitHub} ${yearText} and ${funFacts.monthsOnGitHub} ${monthText}`;
+    console.log(`yearsOnGitHub: ${timeOnGitHub}`);
     
     if (funFacts.mostLikedRepo) {
         console.log(`mostLikedRepo: ${funFacts.mostLikedRepo.name} with ${funFacts.mostLikedRepo.starCount} stars`);

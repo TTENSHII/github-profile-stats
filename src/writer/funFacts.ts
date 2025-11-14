@@ -12,7 +12,12 @@ const writeFunFacts = (funFacts: FunFacts, textBuffer: string[]) => {
     if (funFacts.mostLikedRepo) {
         textBuffer.push(`💖 - Most liked repo: ${funFacts.mostLikedRepo.name} with ${funFacts.mostLikedRepo.starCount} stars`)
     }
-    textBuffer.push(`📅 - Days on GitHub: ${funFacts.daysOnGitHub} days (${funFacts.yearsOnGitHub} years)`);
+    const yearText = funFacts.yearsOnGitHub === 1 ? 'year' : 'years';
+    const monthText = funFacts.monthsOnGitHub === 1 ? 'month' : 'months';
+    const timeOnGitHub = funFacts.monthsOnGitHub === 0 
+        ? `${funFacts.yearsOnGitHub} ${yearText}`
+        : `${funFacts.yearsOnGitHub} ${yearText} and ${funFacts.monthsOnGitHub} ${monthText}`;
+    textBuffer.push(`📅 - ${timeOnGitHub}`);
     textBuffer.push(`🌴 - Weekend commits ratio: ${funFacts.weekendWarriorRatio}%`);
     if (funFacts.commitStormDay) {
         textBuffer.push(`🌪️ - Commit storm day: ${funFacts.commitStormDay.date} with ${funFacts.commitStormDay.count} commits`)

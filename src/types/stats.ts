@@ -71,7 +71,7 @@ type FunFacts = {
     commitStormDay: CommitStormDay | null;
     averageCommitsPerRepo: number;
     weekendWarriorRatio: number;
-    daysOnGitHub: number;
+    monthsOnGitHub: number;
     yearsOnGitHub: number;
     mostLikedRepo: Repository | null;
 };

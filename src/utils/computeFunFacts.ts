@@ -98,14 +98,23 @@ const getWeekendWarriorRatio = (commits: Commit[]): number => {
 }
 
 /**
- * Calculates the number of days since the user joined GitHub.
+ * Calculates the remaining months after complete years since the user joined GitHub.
  * @param createdAt User's account creation date.
- * @returns Number of days on GitHub.
+ * @returns Number of remaining months (0-11).
  */
-const getDaysOnGitHub = (createdAt: Date): number => {
+const getMonthsOnGitHub = (createdAt: Date): number => {
     const now = new Date();
-    const diffTime = Math.abs(now.getTime() - createdAt.getTime());
-    return Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    let months = now.getMonth() - createdAt.getMonth();
+
+    if (months < 0 || (months === 0 && now.getDate() < createdAt.getDate())) {
+        months += 12;
+    }
+
+    if (now.getDate() < createdAt.getDate() && months > 0) {
+        months--;
+    }
+
+    return months;
 }
 
 /**
@@ -115,7 +124,14 @@ const getDaysOnGitHub = (createdAt: Date): number => {
  */
 const getYearsOnGitHub = (createdAt: Date): number => {
     const now = new Date();
-    return now.getFullYear() - createdAt.getFullYear();
+    let years = now.getFullYear() - createdAt.getFullYear();
+
+    if (now.getMonth() < createdAt.getMonth() || 
+        (now.getMonth() === createdAt.getMonth() && now.getDate() < createdAt.getDate())) {
+        years--;
+    }
+    
+    return years;
 }
 
 /**
@@ -150,7 +166,7 @@ const computeFunFacts = (repositories: Repository[], userStats: UserStats): FunF
         commitStormDay: getCommitStormDay(allCommits),
         averageCommitsPerRepo: getAverageCommitsPerRepo(repositories),
         weekendWarriorRatio: getWeekendWarriorRatio(allCommits),
-        daysOnGitHub: getDaysOnGitHub(userStats.createdAt),
+        monthsOnGitHub: getMonthsOnGitHub(userStats.createdAt),
         yearsOnGitHub: getYearsOnGitHub(userStats.createdAt),
         mostLikedRepo: getMostLikedRepository(repositories),
     };
