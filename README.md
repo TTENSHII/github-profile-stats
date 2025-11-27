@@ -118,48 +118,48 @@ The philosophy behind this is simple: it is preferable to fail cleanly than to p
 🎏 Quick overview of my profile
 ```text
 👥 - Followers: 14
-👤 - Following: 12
+👤 - Following: 10
 📂 - Public repositories: 15
-🔒 - Private repositories: 7
+🔒 - Private repositories: 20
 ⭐ - Total stars: 26
-🔃 - Pull requests: 387
+🔃 - Pull requests: 388
 🏮 - Issues: 32
-🐲 - Repositories contributed to: 22
-🍃 - Commits made: 1342
+🐲 - Repositories contributed to: 35
+🍃 - Commits made: 1427
 📝 - Gists: 2
 ```
 
 🎉 Fun Facts:
 ```text
-🏆 - Longest commit streak: 8 days
+🏆 - Longest commit streak: 17 days
 💖 - Most liked repo: XashInjector with 8 stars
-📅 - 4 years and 4 months
-🌴 - Weekend commits ratio: 28%
+📅 - 4 years and 4 months on GitHub
+🌴 - Weekend commits ratio: 29%
 🌪️ - Commit storm day: 5/30/2023 with 35 commits
-📊 - Average commits per repo: 61
+📊 - Average commits per repo: 41
 ```
 
 📊 Top languages
 ```text
-Assembly  : #........................ 4%
-C         : ######................... 25%
-C++       : #########................ 34%
-Haskell   : ###...................... 11%
-Python    : #........................ 5%
-TypeScript: #####.................... 21%
+Assembly  : #........................ 5%
+C         : ########................. 33%
+C++       : ########................. 34%
+Haskell   : ###...................... 13%
+Python    : #........................ 3%
+TypeScript: ###...................... 13%
 ```
 🌉 Working hours stats
 ```text
 Morning   : #####.................... 20%
 Afternoon : ########................. 34%
-Evening   : #######.................. 27%
-Night     : #####.................... 19%
+Evening   : #######.................. 28%
+Night     : #####.................... 18%
 ```
 📅 Working days stats
 ```text
 Sunday    : ####..................... 18%
 Monday    : ###...................... 12%
-Tuesday   : ####..................... 18%
+Tuesday   : #####.................... 18%
 Wednesday : ####..................... 16%
 Thursday  : ###...................... 12%
 Friday    : ###...................... 13%
