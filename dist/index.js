@@ -26500,6 +26500,25 @@ exports.writeStatsInFile = writeStatsInFile;
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 exports.writeFunFacts = void 0;
 /**
+ * Formats the time on GitHub into a human-readable string.
+ * @param years Number of years on GitHub.
+ * @param months Number months on GitHub (0-11).
+ * @return Formatted time string.
+ */
+const formatTimeOnGitHub = (years, months) => {
+    const parts = [];
+    if (years > 0) {
+        parts.push(`${years} ${years === 1 ? "year" : "years"}`);
+    }
+    if (months > 0 && months < 12) {
+        parts.push(`${months} ${months === 1 ? "month" : "months"}`);
+    }
+    if (parts.length === 0) {
+        return "less than a month";
+    }
+    return parts.join(" and ");
+};
+/**
  * Format and append fun facts to the text buffer.
  * @param funFacts Fun facts data.
  * @param textBuffer Array of strings to append the fun facts to.
@@ -26511,12 +26530,8 @@ const writeFunFacts = (funFacts, textBuffer) => {
     if (funFacts.mostLikedRepo) {
         textBuffer.push(`💖 - Most liked repo: ${funFacts.mostLikedRepo.name} with ${funFacts.mostLikedRepo.starCount} stars`);
     }
-    const yearText = funFacts.yearsOnGitHub === 1 ? 'year' : 'years';
-    const monthText = funFacts.monthsOnGitHub === 1 ? 'month' : 'months';
-    const timeOnGitHub = funFacts.monthsOnGitHub === 0
-        ? `${funFacts.yearsOnGitHub} ${yearText}`
-        : `${funFacts.yearsOnGitHub} ${yearText} and ${funFacts.monthsOnGitHub} ${monthText}`;
-    textBuffer.push(`📅 - ${timeOnGitHub}`);
+    const timeOnGitHub = formatTimeOnGitHub(funFacts.yearsOnGitHub, funFacts.monthsOnGitHub);
+    textBuffer.push(`📅 - ${timeOnGitHub} on GitHub`);
     textBuffer.push(`🌴 - Weekend commits ratio: ${funFacts.weekendWarriorRatio}%`);
     if (funFacts.commitStormDay) {
         textBuffer.push(`🌪️ - Commit storm day: ${funFacts.commitStormDay.date} with ${funFacts.commitStormDay.count} commits`);
